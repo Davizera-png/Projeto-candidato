@@ -45,9 +45,24 @@ public class prog {
 			pexp = pexp + 40;
 		}
 		//termino de calculos
-		 System.out.println("Pontos de escolaridade"+ pesc);
-		 System.out.println("Pontos de experiência"+ pexp);
-		
+		 System.out.println("Pontos de escolaridade: "+ pesc);
+		 System.out.println("Pontos de experiência: "+ pexp);
+		 
+		 //resultados finais
+		 System.out.println("Você está habilitado para o(s) seguinte(s) cargo(s):");
+		 
+		 if (pesc >= 20 && opc2 == 'S') {
+			 System.out.println("ASSISTENTE");
+		 }
+		 if (pesc >= 30 && pexp >= 20) {
+			 System.out.println("GERENTE");
+		 }
+		if (pesc >= 30 && pexp >= 40 && opc1 == 'S') {
+			System.out.println("ANALISTA");
+		}
+		if (pesc < 20) {
+			System.out.println("Infelizmente seu perfil não atende a empresa");
+		}
 		
 	}
 
